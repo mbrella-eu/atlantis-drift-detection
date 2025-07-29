@@ -144,7 +144,7 @@ func (d *Drifter) FindDriftedWorkspaces(ctx context.Context, ws atlantis.Directo
 
 				pr, err := d.AtlantisClient.PlanSummary(ctx, &atlantis.PlanSummaryRequest{
 					Repo:      d.Repo,
-					Ref:       "master",
+					Ref:       "main",
 					Type:      "Github",
 					Dir:       dir,
 					Workspace: workspace,
